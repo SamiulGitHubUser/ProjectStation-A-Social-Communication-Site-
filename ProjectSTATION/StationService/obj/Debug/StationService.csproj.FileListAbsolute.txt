@@ -1,0 +1,13 @@
+c:\users\document\documents\visual studio 2017\Projects\ProjectSTATION\StationService\bin\Debug\StationService.dll
+c:\users\document\documents\visual studio 2017\Projects\ProjectSTATION\StationService\bin\Debug\StationService.pdb
+c:\users\document\documents\visual studio 2017\Projects\ProjectSTATION\StationService\bin\Debug\StationEntity.dll
+c:\users\document\documents\visual studio 2017\Projects\ProjectSTATION\StationService\bin\Debug\StationRepository.dll
+c:\users\document\documents\visual studio 2017\Projects\ProjectSTATION\StationService\bin\Debug\EntityFramework.dll
+c:\users\document\documents\visual studio 2017\Projects\ProjectSTATION\StationService\bin\Debug\StationEntity.pdb
+c:\users\document\documents\visual studio 2017\Projects\ProjectSTATION\StationService\bin\Debug\StationEntity.dll.config
+c:\users\document\documents\visual studio 2017\Projects\ProjectSTATION\StationService\bin\Debug\StationRepository.pdb
+c:\users\document\documents\visual studio 2017\Projects\ProjectSTATION\StationService\bin\Debug\StationRepository.dll.config
+c:\users\document\documents\visual studio 2017\Projects\ProjectSTATION\StationService\bin\Debug\EntityFramework.xml
+c:\users\document\documents\visual studio 2017\Projects\ProjectSTATION\StationService\obj\Debug\StationService.csprojResolveAssemblyReference.cache
+c:\users\document\documents\visual studio 2017\Projects\ProjectSTATION\StationService\obj\Debug\StationService.dll
+c:\users\document\documents\visual studio 2017\Projects\ProjectSTATION\StationService\obj\Debug\StationService.pdb

@@ -1,0 +1,86 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{19D679D9-FFE5-4360-8E2F-2D3865DD3E4B}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>StationRepository</RootNamespace>
+    <AssemblyName>StationRepository</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Context\StationDBContext.cs" />
+    <Compile Include="Repository\ImplementRepository\FollowingRepository.cs" />
+    <Compile Include="Repository\ImplementRepository\CommentRepository.cs" />
+    <Compile Include="Repository\ImplementRepository\LoginRepository.cs" />
+    <Compile Include="Repository\ImplementRepository\Repository.cs" />
+    <Compile Include="Repository\InterfaceRepository\ICommentRepository.cs" />
+    <Compile Include="Repository\InterfaceRepository\IFollowshipRepository.cs" />
+    <Compile Include="Repository\InterfaceRepository\ILikeRepository.cs" />
+    <Compile Include="Repository\InterfaceRepository\ILoginRepository.cs" />
+    <Compile Include="Repository\InterfaceRepository\INotificationRepository.cs" />
+    <Compile Include="Repository\InterfaceRepository\IPostRepository.cs" />
+    <Compile Include="Repository\InterfaceRepository\IReceiverRepository.cs" />
+    <Compile Include="Repository\InterfaceRepository\IRepository.cs" />
+    <Compile Include="Repository\InterfaceRepository\ISenderRepository.cs" />
+    <Compile Include="Repository\InterfaceRepository\IUserProfileRepository.cs" />
+    <Compile Include="Repository\InterfaceRepository\IUserRepository.cs" />
+    <Compile Include="Repository\ImplementRepository\LikeRepository.cs" />
+    <Compile Include="Repository\ImplementRepository\NotificationRepository.cs" />
+    <Compile Include="Repository\ImplementRepository\PostRepository.cs" />
+    <Compile Include="Repository\ImplementRepository\ReceiverRepository.cs" />
+    <Compile Include="Repository\ImplementRepository\SenderRepository.cs" />
+    <Compile Include="Repository\ImplementRepository\UserProfileRepository.cs" />
+    <Compile Include="Repository\ImplementRepository\UserRepository.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\StationEntity\StationEntity.csproj">
+      <Project>{011f31a5-169c-4756-9e38-316785c201c8}</Project>
+      <Name>StationEntity</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
